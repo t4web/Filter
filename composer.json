@@ -1,0 +1,22 @@
+{
+    "name": "t4web/filter",
+    "type": "library",
+    "authors": [
+        {
+            "name": "maxgu",
+            "email": "gulturyan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5"
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "~4.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "T4webFilter\\": "src/",
+            "T4webFilterTest\\": "test/"
+        }
+    }
+}
