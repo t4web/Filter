@@ -4,8 +4,8 @@ namespace T4webFilter;
 interface FilterInterface
 {
     /**
-     * @param array $filter
+     * @param array $inputData
      * @return array
      */
-    public function filter(array $filter = []);
+    public function prepare(array $inputData = []);
 }
