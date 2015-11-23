@@ -22,13 +22,6 @@ class Filter implements FilterInterface
         if (empty($filter['limit'])) {
             $filter['limit'] = $this->getDefault('limit', 20);
         }
-        if (!empty($filter['page'])) {
-            $filter['offset'] = $filter['limit'] * ($filter['page'] - 1);
-            unset($filter['page']);
-        }
-        if (empty($filter['offset'])) {
-            $filter['offset'] = $this->getDefault('offset', 0);
-        }
 
         return $filter;
     }
