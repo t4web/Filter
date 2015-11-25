@@ -19,6 +19,8 @@ class Filter implements FilterInterface
      */
     public function prepare(array $filter = [])
     {
+        $filter = array_filter($filter);
+
         if (empty($filter['limit'])) {
             $filter['limit'] = $this->getDefault('limit', 20);
         }
