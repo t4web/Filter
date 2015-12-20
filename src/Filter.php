@@ -25,6 +25,8 @@ class Filter implements FilterInterface
             $filter['limit'] = $this->getDefault('limit', 20);
         }
 
+        $filter['order'] = 'id DESC';
+
         return $filter;
     }
 
